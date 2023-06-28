@@ -91,9 +91,7 @@ bower_components
 build/Release
 
 # Dependency directories
-.node_modules/
-/node_modules
-node_modules
+node-modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -237,3 +235,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,visualstudiocode,node
+node_modules
