@@ -1,4 +1,4 @@
-function TodoCounter() {
+function TodoCounter(props) {
     return (
         <h1>
             Has completado 3 de 5 TODOS

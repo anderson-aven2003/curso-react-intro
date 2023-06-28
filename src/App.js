@@ -1,6 +1,8 @@
 import { TodoCounter} from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
+import { TodoItem } from './TodoItem';
+import { CreateTodoButton } from './createTodoButton';
 import './App.css';
 
 function App() {
@@ -16,22 +18,10 @@ function App() {
         <TodoItem />
       </TodoList>
 
-      {/* <CreateTodoButton /> */}
+      <CreateTodoButton />
 
 
     </div>
-  );
-}
-
-
-
-function TodoItem() {
-  return (
-    <li>
-      <span>v</span>
-      <p>Llorar con la llorona</p>
-      <span>x</span>
-    </li>
   );
 }
 
