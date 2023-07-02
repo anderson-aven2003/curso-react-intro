@@ -1,7 +1,13 @@
 import React from "react";
+import { todoIcon } from './todoIcon';
 
 function deleteIcon() {
-    return 'x';
+    return (
+        <todoIcon
+            type="delete"
+            color="gray"
+        />
+    );
 }
 
 export { deleteIcon };
