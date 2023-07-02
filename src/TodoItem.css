@@ -20,7 +20,7 @@
     text-decoration: line-through;
 }
 
-.Icon {
+.icon {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -31,21 +31,21 @@
     font-weight: bold;
 }
 
-.Icon-check {
+.icon-check {
     position: absolute;
     left: 12px;
 }
 
-.Icon-check--active {
+.icon-check--active {
     color: #4caf50;
 }
 
-.Icon-delete {
+.icon-delete {
     position: relative;
     top: -24px;
     right: 0;
 }
 
-.Icon-delete:hover{
+.icon-delete:hover{
     color: red;
 }
