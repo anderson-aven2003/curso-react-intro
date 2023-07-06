@@ -10,12 +10,20 @@
 .TodoCounter{
     font-size: 24px;
     text-align: center;
+    text-decoration: underline;
     margin: 0;
     padding: 48px;
     font-weight: normal;
 }
 
-.TodoCounter span{
+.span-numero{
+    color: #F29727;
     font-weight: bold;
 }
+
+.span-numero2{
+    color: #F29727;
+    font-weight: bold;
+}
+
 

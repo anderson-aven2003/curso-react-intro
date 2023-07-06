@@ -1,6 +1,6 @@
 .TodoSearch{
     background: #f9fbfc;
-    border-radius: 2px;
+    border-radius: 8px;
     border: 2px solid #202329;
     margin: 0 24px;
     height: 64px;
@@ -9,7 +9,7 @@
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 400;
-    color: #1e1e1e;
+    color: rgba(255, 161, 0, 0.8);
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
 }
 
@@ -19,5 +19,10 @@
 }
 
 .TodoSearch:focus{
-    outline-color: #61dafa;
+    outline-color: rgba(255, 161, 0, 0.8);
+    box-shadow: 0px 5px 50px rgba(255, 161, 0, 0.8);
 }
+
+/* .TodoSearch:hover{
+    outline-color: rgba(255, 161, 0, 0.8);
+} */

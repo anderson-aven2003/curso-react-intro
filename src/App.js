@@ -6,11 +6,11 @@ import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './createTodoButton';
 
 const defaultTOdos = [
-  { text: "cortar cebolla", completed: true },
+  { text: "cortar cebolla", completed: false },
   { text: "tomar el curso de intro a react.js", completed: false },
   { text: "llorar con la llorona", completed: false },
   { text: "lalalala", completed: false },
-  { text: "usar estados derivados", completed: true },
+  { text: "usar estados derivados", completed: false },
 ];
 
 function App() {
