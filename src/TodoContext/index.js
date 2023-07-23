@@ -1,27 +1,23 @@
-import React from "react";
-import {useLocalStorage} from './useLocalStorage'
+import React from 'react';
+import { useLocalStorage } from './useLocalStorage';
 
 const TodoContext = React.createContext();
 
 function TodoProvider({ children }) {
-
     const {
         item: todos,
         saveItem: saveTodos,
         loading,
         error,
     } = useLocalStorage('TODOS_V1', []);
-
     const [searchValue, setSearchValue] = React.useState('');
-    const [openModal, setOpenModa] = React.useState(true);
-
-
+    const [openModal, setOpenModal] = React.useState(true);
 
     const completedTodos = todos.filter(
         todo => !!todo.completed
     ).length;
-
     const totalTodos = todos.length;
+
     const searchedTodos = todos.filter(
         (todo) => {
             const todoText = todo.text.toLowerCase();
@@ -60,22 +56,11 @@ function TodoProvider({ children }) {
             completeTodo,
             deleteTodo,
             openModal,
-            setOpenModa,
+            setOpenModal,
         }}>
             {children}
         </TodoContext.Provider>
     );
 }
+
 export { TodoContext, TodoProvider };
-
-// localStorage.removeItem('TODOS_V1');
-
-// const defaultTodos = [
-//     {text: 'cortar cebolla', completed: true},
-//     {text: 'tomar el curso de Intro a React.js', completed: false},
-//     {text: 'llorar con la llorona', completed: false},
-//     {text: 'LALALALA', completed: false},
-//     {text: 'usar estados derivados', completed: true}
-// ];
-
-// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));

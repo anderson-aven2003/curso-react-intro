@@ -3,13 +3,12 @@ import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
-import { CreateTodoButton } from '../CreateTodoButton';
-import { TodosLoading } from '../TodoSearch/TodosLoading';
+import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
-import { TodoContext } from '../TodoContext';
+import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
-
+import { TodoContext } from '../TodoContext';
 
 function AppUI() {
     const {
@@ -20,24 +19,21 @@ function AppUI() {
         deleteTodo,
         openModal,
         setOpenModal,
-    } = React.useContext (TodoContext)
+    } = React.useContext(TodoContext);
 
     return (
-
         <>
             <TodoCounter />
             <TodoSearch />
 
             <TodoList>
-                {loading &&
+                {loading && (
                     <>
                         <TodosLoading />
                         <TodosLoading />
                         <TodosLoading />
-                        <TodosLoading />
-                        <TodosLoading />
                     </>
-                }
+                )}
                 {error && <TodosError />}
                 {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
 
@@ -49,17 +45,18 @@ function AppUI() {
                         onComplete={() => completeTodo(todo.text)}
                         onDelete={() => deleteTodo(todo.text)}
                     />
-
                 ))}
             </TodoList>
-            <CreateTodoButton setOpenModal={setOpenModal} />
 
-            { openModal && (
-                            <Modal>
-                            la funcionalidad de agregar TODO
-                        </Modal>
+            <CreateTodoButton
+                setOpenModal={setOpenModal}
+            />
+
+            {openModal && (
+                <Modal>
+                    La funcionalidad de agregar TODO
+                </Modal>
             )}
-
         </>
     );
 }

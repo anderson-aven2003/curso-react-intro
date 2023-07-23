@@ -1,9 +1,8 @@
 import React from 'react';
 
 function TodosError() {
-
     return (
-        <p>ya valio 😢</p>
+        <p>Error...</p>
     );
 }
 

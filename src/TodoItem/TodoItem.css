@@ -1,15 +1,11 @@
 .TodoItem {
-    background-color: #fafafa;
+    background-color: #FAFAFA;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-top: 24px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-}
-
-.TodoItem:hover{
-    box-shadow: 0px 5px 50px rgba(255, 161, 0, 0.8)
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
 }
 
 .TodoItem-p {
@@ -23,4 +19,3 @@
 .TodoItem-p--complete {
     text-decoration: line-through;
 }
-

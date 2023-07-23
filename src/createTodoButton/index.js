@@ -1,12 +1,15 @@
-import './createTodoButton.css';
+import './CreateTodoButton.css'
 
-function CreateTodoButton({setOpenModal}) {
+function CreateTodoButton({ setOpenModal }) {
     return (
-        <button className="createTodoButton" onClick={
-            () =>{
-                setOpenModal(state => !state)
+        <button
+            className="CreateTodoButton"
+            onClick={
+                () => {
+                    setOpenModal(state => !state);
+                }
             }
-        }>+</button>
+        >+</button>
     );
 }
 
