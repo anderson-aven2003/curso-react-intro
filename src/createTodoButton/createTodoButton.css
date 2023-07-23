@@ -21,6 +21,7 @@
     align-items: stretch;
     height: 70px;
     width: 70px;
+    z-index: 1;
 
     transform: rotate(0);
     transform: .3s ease;
