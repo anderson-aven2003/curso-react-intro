@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.181e8c6f.css",
-    "main.js": "./static/js/main.acd905a3.js",
-    "index.html": "./index.html",
-    "static/media/bx-x-circle.svg": "./static/media/bx-x-circle.ee762a770f0332e062717ee7e6ae872d.svg",
-    "static/media/bx-check-double.svg": "./static/media/bx-check-double.c297fa0bfac12235421b6f1c87da7214.svg",
-    "main.181e8c6f.css.map": "./static/css/main.181e8c6f.css.map",
-    "main.acd905a3.js.map": "./static/js/main.acd905a3.js.map"
+    "main.css": "/curso-react-intro/static/css/main.181e8c6f.css",
+    "main.js": "/curso-react-intro/static/js/main.2e2dc7cd.js",
+    "index.html": "/curso-react-intro/index.html",
+    "static/media/bx-x-circle.svg": "/curso-react-intro/static/media/bx-x-circle.ee762a770f0332e062717ee7e6ae872d.svg",
+    "static/media/bx-check-double.svg": "/curso-react-intro/static/media/bx-check-double.c297fa0bfac12235421b6f1c87da7214.svg",
+    "main.181e8c6f.css.map": "/curso-react-intro/static/css/main.181e8c6f.css.map",
+    "main.2e2dc7cd.js.map": "/curso-react-intro/static/js/main.2e2dc7cd.js.map"
   },
   "entrypoints": [
     "static/css/main.181e8c6f.css",
-    "static/js/main.acd905a3.js"
+    "static/js/main.2e2dc7cd.js"
   ]
 }
