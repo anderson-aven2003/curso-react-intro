@@ -8,7 +8,7 @@ import { TodosError } from '../TodosError';
 import { TodosLoading } from '../TodosLoading';
 import { EmptyTodos } from '../EmptyTodos';
 import { TodoForm } from '../TodoForm';
-import {createTodoButton} from '../createTodoButton'
+import { CreateTodoButton } from '../CreateTodoButton'
 import { Modal } from '../Modal';
 
 function AppUI() {
@@ -29,7 +29,8 @@ function AppUI() {
 
             <TodoList>
                 {error && <TodosError />}
-                {loading && <TodosLoading />}
+                {loading && <TodosLoading />
+                }
                 {(!loading && !searchedTodos.length) && <EmptyTodos />}
 
                 {searchedTodos.map(todo => (
@@ -49,7 +50,7 @@ function AppUI() {
                 </Modal>
             )}
 
-            <createTodoButton
+            <CreateTodoButton
                 setOpenModal={setOpenModal}
             />
         </React.Fragment>

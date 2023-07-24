@@ -4,7 +4,7 @@
     border: 0;
 }
 
-.createTodoButton{
+.CreateTodoButton{
     background-color: #61dafa;
     box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
     border: none;
@@ -27,6 +27,6 @@
     transform: .3s ease;
 }
 
-.createTodoButton:hover{
+.CreateTodoButton:hover{
     transform: rotate(224deg);
 }
